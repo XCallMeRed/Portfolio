@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: #ffffff;
+}
+/* @media (min-width: 595px) {} */
+.nav{
+    display: flex;
+    top: 0%;
+    left: 2px;
+    align-items: center;
+    justify-content: space-between;
+    width: 84%;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+}
+.nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+.logo{
+    color: red;
+    font-size: 50px;
+    animation: logo 0.5s infinite;   
+}
+@keyframes logo{
+    0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+li a:hover{
+    color: red;
+    animation: fadeIn ease 3s;
+
+}
+@keyframes fadeIn{
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+.detail{
+    
+    margin-top: 18%;
+}
+.button{
+    background-color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px red;
+    margin: 20px;
+}
+h1{
+    font-size: 80px;
+}
+h1 span{
+    color: red;
+    box-shadow: 0px 0px 15px 0px red;
+}
+p{
+    font-size: 45px;
+    font-weight: 100;
+    line-height: 50px;
+}
+.images{
+    width: 45%;
+        height: 80%;
+        position: absolute;
+        bottom: 0%;
+        left: 60%;
+}
+.images img{
+    top: 20%;
+    position: absolute;
+    left: 10%;
+    height: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s ,left 1s;
+}
+.images:hover .shape{
+    top: 40%;
+}
+.images:hover .vol{
+    left: 30%;
+}
+.about-me{
+    font-size: 30px;
+    
+}
+.my-portfolio{
+    padding-right: 500px;
+}
+.images  .vol{
+    width: 400px;
+    position: absolute;
+    height: 400px;
+    bottom: 150px;
+}
+/* The End Of The 1st Section */
+/* Beginning Of The 2nd Section */
+#about h2{
+    color: red;
+    text-align: center;
+}
+.about-image img{
+    position: absolute;
+    left: 10%;
+    height: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.container{
+    display: flex;
+    padding-left: 625px;
+    
+}
+.about-text li{
+    list-style: none;
+}
+.about-text span{
+    margin-left: 50px;
+}
+/* The End Of 2nd Section */
+/* Beginning Of The 3rd Section */
+#skills{
+    margin-top: 200px;
+    bottom: -280px;
+    
+}
+#skills h1{
+    text-align: center;
+    color: red;
+}
+.progress-bar{
+    width: 200px;
+    height: 5px;
+    margin-top: 10px;
+    border: 1px solid red;
+    box-shadow: 0 0 10px crimson;
+    border-radius: 5px;
+}
+.percentage{
+    display: block;
+    height: 100%;
+    background-color: orangered;
+    border-radius: 5px;
+    animation: progress 1500ms ease-in 1;
+
+}
+@keyframes progress{
+    from{
+        width: 0;
+    }
+    
+}
+.html{
+    width: 90%;
+}
+.css{
+    width: 70%;
+}
+/* The End Of The 3rd Section */
+/* Beginning Of The 4th Section */
+.service{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+#services h1{
+    text-align: center;
+    color: red;
+}
